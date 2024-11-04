@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Криворот Владислав Віталійович, група ІП-23, лабораторна 6, Варіант 9</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+        .card {
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+            padding: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        .card h4 {
+            margin: 10px 0 5px;
+        }
+        .card p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+        #loading {
+            text-align: center;
+            color: green;
+            margin: 20px;
+        }
+        #fetch-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #fetch-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<button id="fetch-button">Завантажити користувача</button>
+<div class="container" id="user-container"></div>
+<div id="loading" style="display: none;">Завантаження...</div>
+
+<script src="script.js"></script>
+</body>
+</html>
